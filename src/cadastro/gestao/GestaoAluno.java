@@ -18,7 +18,11 @@ public class GestaoAluno {
 		Tela.cabecalho(true);
 	}
 
-	private final static String LOCAL = "C:\\Users\\krist\\eclipse-workspace\\cadastro\\src\\cadastro\\gestao\\cadastro.txt";
+	private final static String LOCAL = "src/cadastro/gestao/cadastro.txt";
+	
+	//"/home/cris/Área de trabalho/JAVA 2024/cadastro-console-app/src/cadastro/gestao/cadastro.txt";
+	//"C:\\Users\\krist\\eclipse-workspace\\cadastro\\src\\cadastro\\gestao\\cadastro.txt";
+	
 	private static int nextId = 1;
 	private static final Map<Integer, Aluno> lista_alunos = new HashMap<>();
 

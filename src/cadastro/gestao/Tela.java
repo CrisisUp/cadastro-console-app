@@ -6,18 +6,23 @@ import java.text.SimpleDateFormat;
 public class Tela {
 	static int tamTela = 44; // Valor MÍNIMO = 44, deve ser número PAR
 	public static Boolean cabecalho(boolean c) {
-		SimpleDateFormat formatadorDeData = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+		SimpleDateFormat formData = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 		Date data = new Date();
 		
 		if (c == false) {
 			System.out.println();
-			System.out.println("Programa Iniciado em: " + formatadorDeData.format(data));
+			Imprime.bordas("*", Tela.tamTela);
+			System.out.println("Programa Iniciado em: " + formData.format(data));
 		} else {
-			System.out.println("Programa Finalizado em: " + formatadorDeData.format(data));
+			Imprime.bordas("*", Tela.tamTela);
+			System.out.println("Programa Finalizado em: " + formData.format(data));
 		}
+		
 		imprimeCabecalho("CRIS CORPORATION", Imprime.GREEN);
 		imprimeCabecalho("SOFTWARE DE GESTÃO DE PESSOAS ", Imprime.PURPLE);
 		imprimeSubCabe("Produzido por: ", "Cristiano B. Pessoa");
+		Imprime.bordas("*", Tela.tamTela);
+		System.out.println();
 		return c;
 	}
 	

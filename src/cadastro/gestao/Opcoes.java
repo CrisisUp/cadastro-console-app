@@ -17,7 +17,7 @@ public class Opcoes {
 				case 4 -> GestaoAluno.opcaoAtualizar(scanner, id);
 				case 5 -> GestaoAluno.opcaoDeletar(scanner, id);
 				case 6 -> GestaoAluno.opcaoSalvar();
-				default -> Imprime.caixaComTextoCor("Digite um número válido! ", Imprime.RED);
+				default -> Imprime.caixaComTextoCor("Digite um número válido! [0-6]", Imprime.RED);
 				}
 			} catch (NumberFormatException e) {
 				Imprime.bordas("-", Tela.tamTela);
