@@ -9,7 +9,7 @@ public class Tela {
 		SimpleDateFormat formData = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 		Date data = new Date();
 		
-		if (c == false) {
+		if (!c) {
 			System.out.println();
 			Imprime.bordas("*", Tela.tamTela);
 			System.out.println("Programa Iniciado em: " + formData.format(data));
@@ -17,7 +17,7 @@ public class Tela {
 			Imprime.bordas("*", Tela.tamTela);
 			System.out.println("Programa Finalizado em: " + formData.format(data));
 		}
-		
+
 		imprimeCabecalho("CRIS CORPORATION", Imprime.GREEN);
 		imprimeCabecalho("SOFTWARE DE GESTÃO DE PESSOAS ", Imprime.PURPLE);
 		imprimeSubCabe("Produzido por: ", "Cristiano B. Pessoa");
